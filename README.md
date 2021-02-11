@@ -9,3 +9,37 @@ aplicação em uma máquina real. Responsável pela Portabilidade do código Jav
 comum precisa para executar uma aplicação Java (JVM e bibliotecas). Fornece as bibliotecas padrões do Java para o JDK compilar o seu código e para a JVM executar o seu programa.
 O JDK Java Development Kit é composto pelo JRE e um conjunto de
 ferramentas úteis ao desenvolvedor Java. Responsável por compilar código-fonte (.java) em bytecode (.class)
+
+4 -) Ao apagar o arquivo .class gerado e executando novamente É criado novamente o arquivo .class
+
+5 -) Ao mudar o  método main para start é criado o arquivo "start.class".  
+
+7 - ) o Console exibiu que Ocorreram 3 erros e 1 status de saída. 
+///////////////////////////////
+DuasLinhasUpperCase.java:1: error: class, interface, or enum expected
+CLASS MAIN {
+^
+DuasLinhasUpperCase.java:4: error: class, interface, or enum expected
+    SYSTEM.OUT.PRINTLN("FLAMENGO");
+    ^
+DuasLinhasUpperCase.java:5: error: class, interface, or enum expected
+  }
+  ^
+3 errors
+exit status 1
+//////////////////////////////////
+
+8 - ) Ocorreram os mesmos erros do exemplo anterior porém com o nome do arquivo diferente.
+////////////////////////
+DuasLinhasUpperDifferent.java:1: error: class, interface, or enum expected
+CLASS MAIN {
+^
+DuasLinhasUpperDifferent.java:4: error: class, interface, or enum expected
+    SYSTEM.OUT.PRINTLN("FLAMENGO");
+    ^
+DuasLinhasUpperDifferent.java:5: error: class, interface, or enum expected
+  }
+  ^
+3 errors
+exit status 1
+///////////////////////////
